@@ -1,0 +1,127 @@
+@import "../../common/colors.scss";
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: lighten($color: $background-primary, $amount: 2.5%);
+    box-shadow: 1px 1px 30px -18px $font-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      position: inherit;
+      margin: 0;
+    }
+    .links {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $font-primary;
+    }
+    a {
+      color: darken($font-primary, 20%);
+      text-decoration: none;
+      margin: 20px;
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border: 1px solid transparent;
+    }
+    .toggleButton {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      svg {
+        font-size: 50px;
+      }
+      button {
+        margin-right: 20px;
+        background-color: transparent;
+        border: none;
+        color: $font-primary;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .hire {
+    color: $font-secondary !important;
+    background-color: $font-primary;
+    border-radius: 15px;
+    padding: 5px 20px;
+    width: auto;
+  }
+  
+  
+  #open {
+    height: 100vh;
+    .links {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 100px;
+    }
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 800px) {
+    .navbar a {
+      margin: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 609px) {
+    .toggleButton {
+      display: flex !important;
+    }
+    #close a {
+      display: none !important;
+    }
+    .links {
+      width: 100%;
+      a:active {
+        border: 1px solid $font-primary;
+        border-radius: 15px;
+      }
+      .hire {
+        border: none !important;
+      }
+    }
+    .navbar {
+      justify-content: center;
+    }
+    .logo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (min-width: 610px) {
+    .toggleButton {
+      display: none !important;
+    }
+    
+    .hiddenLinks {
+      display: none !important;
+    }
+  
+    #open {
+      height: 100px !important;
+    }
+  
+    #open .links {
+      flex-direction: row !important;
+    }
+    .hidden {
+      display: none !important;
+    }
+  }

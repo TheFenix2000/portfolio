@@ -1,0 +1,18 @@
+@import "../../common/colors.scss";
+.primary {
+    color: $font-primary !important;
+}
+.primary-dark {
+    $font-primary-dark: darken($font-primary, 15%);
+    color: $font-primary-dark !important;
+}
+.buttonStyle {
+    background: transparent !important;
+    color: $font-primary !important;
+    border: 1px solid $font-secondary !important;
+    &:hover {
+        background: $font-primary !important;
+        color: $font-secondary !important;
+        border: 1px solid $font-primary !important;
+    }
+}
