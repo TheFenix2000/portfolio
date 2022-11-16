@@ -15,4 +15,10 @@
         color: $font-secondary !important;
         border: 1px solid $font-primary !important;
     }
+    &:active {
+        transition: backgroundColor .1s ease !important;
+        background: $font-primary !important;
+        color: $font-secondary !important;
+        border: 1px solid $font-primary !important;
+    }
 }

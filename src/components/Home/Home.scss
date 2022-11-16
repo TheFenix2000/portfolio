@@ -1,0 +1,49 @@
+@import "../../common/colors.scss";
+.home {
+
+    .skills {
+        .list {
+            .item {
+                .hexes {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    .hex {
+                        margin: 10px;
+                        border-radius: 5px;
+                        box-shadow: -6px 5px 12px -8px $font-secondary;
+                        border-left: 1px solid lighten($background-primary, 20%);
+                        border-bottom: 1px solid lighten($background-primary, 20%);
+                        border-right: 1px solid lighten($background-primary, 3%);
+                        border-top: 1px solid lighten($background-primary, 3%);
+                        min-width: 125px !important;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all .15s ease-in-out;
+                        &:hover {
+                            transform: scale(1.03);
+                            cursor: default;
+                        }
+                        h5 {
+                            font-weight: 500;
+                            color: $font-secondary;
+                        }
+                        svg {
+                            height: 100px;
+                            background-position: center center;
+                            padding: 10px;
+                            polygon {
+                                fill-rule: evenodd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

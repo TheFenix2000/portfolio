@@ -4,5 +4,10 @@
     width: 100%;
     height: 100vh;
     color: $font-secondary;
-    overflow-y: hidden;
+    // overflow-y: hidden;
 }
+// @media only screen and (max-width: 609px) {
+//     .app {
+//         overflow-y: hidden;
+//     }
+// }

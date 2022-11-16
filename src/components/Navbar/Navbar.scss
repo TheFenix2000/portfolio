@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all .3s ease;
 
     .logo {
       position: inherit;
@@ -55,17 +56,24 @@
     width: auto;
   }
   
-  
   #open {
-    height: 100vh;
+    height: 400px;
+    transition: all .3s ease-in;
     .links {
       flex-direction: column;
       justify-content: flex-start;
-      margin-top: 100px;
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transition-delay: .1s;
     }
     a {
       width: 100%;
       text-align: center;
+    }
+    .logo {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transition-delay: .1s;
     }
   }
   
@@ -76,14 +84,26 @@
       margin: 10px;
     }
   }
+  @media only screen and (max-width: 700px) {
+    .navbar a {
+      margin: 3px;
+    }
+  }
   
-  @media only screen and (max-width: 609px) {
+  @media only screen and (max-width: 615px) {
     .toggleButton {
       display: flex !important;
     }
     #close a {
       display: none !important;
     }
+    .links {
+      opacity: 0;
+    }
+    .logo {
+      opacity: 0;
+    }
+    
     .links {
       width: 100%;
       a:active {
@@ -103,9 +123,16 @@
       align-items: center;
       justify-content: center;
     }
+    #close {
+      .links {
+        opacity: 0;
+        transition: all .3s ease-in;
+  
+      }
+    }
   }
   
-  @media only screen and (min-width: 610px) {
+  @media only screen and (min-width: 616px) {
     .toggleButton {
       display: none !important;
     }
