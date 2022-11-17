@@ -4,10 +4,27 @@
     width: 100%;
     height: 100vh;
     color: $font-secondary;
-    // overflow-y: hidden;
+    overflow: auto;
 }
-// @media only screen and (max-width: 609px) {
-//     .app {
-//         overflow-y: hidden;
-//     }
-// }
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(43, 42, 42, 0.082);
+	border-radius: 10px;
+	background-color: lighten($background-primary, 10%);
+}
+
+*::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: $background-primary;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $font-primary;
+}

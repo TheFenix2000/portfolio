@@ -1,7 +1,9 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material/styles";
 import Hexagon from "react-hexagon";
 import {
   react,
@@ -23,20 +25,51 @@ import {
   mongoose,
 } from "../../common/assets/index";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 function Home() {
+  const BootstrapTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+      color: "rgb(225, 152, 26)",
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: "rgb(225, 152, 26)",
+    },
+  }));
+
   return (
     <div className="home">
       <div className="about">
-        <h4>Hi, I'm Michał Woś</h4>
+        <h3>
+          Hi, I'm <span>Michał Woś</span>
+        </h3>
         <div className="prompt">
-          <h2>Frontend Developer</h2>
-          <EmailIcon />
-          <LinkedInIcon />
-          <GitHubIcon />
+          <h2 className="hire">Frontend Developer</h2>
+          <div className="icons">
+            <BootstrapTooltip title="Github Profile">
+              <a href="https://github.com/TheFenix2000">
+                <GitHubIcon />
+              </a>
+            </BootstrapTooltip>
+            <BootstrapTooltip title="Contact me">
+              <Link to="/contact">
+                <EmailIcon />
+              </Link>
+            </BootstrapTooltip>
+            <BootstrapTooltip title="Download résumé">
+              <Link to="/xyz">
+                <AttachFileIcon />
+              </Link>
+            </BootstrapTooltip>
+          </div>
         </div>
       </div>
       <div className="skills">
-        <h1>Skills</h1>
+        <div className="title">
+          <h1>Skills</h1>
+          <span>&nbsp;</span>
+        </div>
         <ol className="list">
           <li className="item">
             <h2>Front-End</h2>
