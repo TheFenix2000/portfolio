@@ -41,29 +41,32 @@ function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h3>
-          Hi, I'm <span>Michał Woś</span>
-        </h3>
-        <div className="prompt">
-          <h2 className="hire">Frontend Developer</h2>
-          <div className="icons">
-            <BootstrapTooltip title="Github Profile">
-              <a href="https://github.com/TheFenix2000">
-                <GitHubIcon />
-              </a>
-            </BootstrapTooltip>
-            <BootstrapTooltip title="Contact me">
-              <Link to="/contact">
-                <EmailIcon />
-              </Link>
-            </BootstrapTooltip>
-            <BootstrapTooltip title="Download résumé">
-              <Link to="/xyz">
-                <AttachFileIcon />
-              </Link>
-            </BootstrapTooltip>
+        <div className="left">
+          <h3>
+            Hi, I'm <span>Michał Woś</span>
+          </h3>
+          <div className="prompt">
+            <h2 className="hire">Frontend Developer</h2>
+            <div className="icons">
+              <BootstrapTooltip title="Github Profile">
+                <a href="https://github.com/TheFenix2000">
+                  <GitHubIcon />
+                </a>
+              </BootstrapTooltip>
+              <BootstrapTooltip title="Contact me">
+                <Link to="/contact">
+                  <EmailIcon />
+                </Link>
+              </BootstrapTooltip>
+              <BootstrapTooltip title="Download résumé">
+                <Link to="/xyz">
+                  <AttachFileIcon />
+                </Link>
+              </BootstrapTooltip>
+            </div>
           </div>
         </div>
+        <div className="right"></div>
       </div>
       <div className="skills">
         <div className="title">

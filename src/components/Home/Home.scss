@@ -1,35 +1,69 @@
 @import "../../common/colors.scss";
 .home {
     .about {
-        height: calc(100vh - 100px);
         display: flex;
+        justify-content: space-evenly;
+        height: calc(100vh - 100px);
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        h3 {
-            span {
-                background: -webkit-linear-gradient($font-secondary, $font-primary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-        a {
-            color: $font-secondary;
-        }
-        .prompt {
+        .left {
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            .icons {
-                display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-            svg {
-                font-size: 40px;
+            h3 {
+                span {
+                    background: -webkit-linear-gradient($font-secondary, $font-primary);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
+            a {
+                color: $font-secondary;
+            }
+            .prompt {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h2 {
+                    text-align: center;
+                }
+                .icons {
+                        display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    svg {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: url('../../common/assets/profile2.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            svg {
+                width: 100%;
+            }
+            .imgContent {
+                max-width: 300px;
+                position: absolute;
+                top: 81px;
+                min-height: 400px;
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -109,6 +143,66 @@
                                 fill-rule: evenodd;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 850px) {
+    .about {
+        .right {
+            height: max-content !important;
+            min-height: 450px !important;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about {
+        .left {
+            .prompt {
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 615px) {
+    .about {
+        margin: 100px 0px;
+        flex-direction: column-reverse;
+        .right {
+            height: max-content !important;
+            min-height: 400px;
+            margin-bottom: 50px;
+        }
+        .left {
+            height: max-content !important;
+
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .about {
+        flex-direction: column-reverse;
+        .right {
+            height: max-content !important;
+            min-height: 300px;
+        }
+        .left {
+            height: max-content !important;
+            h3 {
+                font-size: 18px;
+            }
+            .prompt {
+                h2 {
+                    font-size: 21px;
+                }
+                .icons {
+
+                    svg {
+                        font-size: 25px !important;
                     }
                 }
             }
