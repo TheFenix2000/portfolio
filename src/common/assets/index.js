@@ -15,5 +15,7 @@ import mysql from "./mysql.png";
 import git from "./git.png";
 import api from "./api.png";
 import mongoose from "./mongoose.png";
+import shop from "./shop.png";
+import movies from "./movies.png";
 
-export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose}
+export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies}

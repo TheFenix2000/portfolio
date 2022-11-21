@@ -70,7 +70,7 @@
     .skills {
         padding: 150px 0px;
         padding-top: -50px;
-        background-color: lighten($background-primary, 6%);
+        background-color: $background-primary-light;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -105,12 +105,35 @@
         }
 
         .list {
+            list-style-type: none;
+            max-width: max-content;
+            width: 100%;
+            padding: 0px 20px;
             .item {
+                padding: 20px;
+                margin-bottom: 40px;
+                background: linear-gradient($background-primary-light, $background-primary-light) padding-box,
+                linear-gradient(to right, $font-primary-light,$font-primary, $font-primary-dark) border-box;
+                border-radius: 7px;
+                border: 4px solid transparent;
+                position: relative;
+                min-width: 200px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                h2 {
+                    position: absolute;
+                    top: -35px;
+                    left: 20px;
+                    padding: 10px;
+                    background-color: $background-primary-light;
+                }
                 .hexes {
+                    border-radius: 7px !important;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    justify-content: flex-start;
+                    justify-content: center;
                     flex-wrap: wrap;
                     .hex {
                         margin: 10px;
@@ -170,7 +193,6 @@
 }
 @media only screen and (max-width: 615px) {
     .about {
-        margin: 100px 0px;
         flex-direction: column-reverse;
         .right {
             height: max-content !important;

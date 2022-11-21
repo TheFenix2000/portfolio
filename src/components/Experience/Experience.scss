@@ -1,0 +1,26 @@
+@import "../../common/colors.scss";
+.experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0px;
+    h2 {
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 700;
+        color: $font-primary;
+        letter-spacing: 1px;
+    }
+}
+
+.experience a {
+    text-decoration: none;
+}
+p {
+    padding-bottom: 10px;
+}
+.hire {
+    box-shadow: 0px 3px 4px -2px $background-primary;
+}

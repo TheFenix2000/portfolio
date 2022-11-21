@@ -11,7 +11,7 @@ function Navbar() {
     setExpand(false);
   }, [location]);
   return (
-    <div className="navbar" id={expand ? "open" : "close"}>
+    <div className="navbar sticky-top" id={expand ? "open" : "close"}>
       <div className="toggleButton">
         <button
           onClick={() => {

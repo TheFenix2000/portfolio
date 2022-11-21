@@ -125,6 +125,8 @@
       justify-content: center;
     }
     #close {
+      background: transparent;
+      box-shadow: none;
       .links {
         opacity: 0;
         transition: all .3s ease-in;
@@ -145,7 +147,6 @@
     #open {
       height: 100px !important;
     }
-  
     #open .links {
       flex-direction: row !important;
     }
