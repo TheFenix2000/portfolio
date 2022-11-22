@@ -17,5 +17,7 @@ import api from "./api.png";
 import mongoose from "./mongoose.png";
 import shop from "./shop.png";
 import movies from "./movies.png";
+import crud from "./crud.png";
+import pando from "./pando.png";
 
-export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies}
+export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies, crud, pando}

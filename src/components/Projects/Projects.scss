@@ -1,21 +1,35 @@
 @import "../../common/colors.scss";
 
 .projects {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 50px 20px;
     flex-direction: column;
+    background-color: $background-primary-light;
     h2 {
-        color: $font-secondary;
+        color: $font-primary;
         padding: 10px;
         text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
     }
     .projectList {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .projects {
+        align-items: center;
+        justify-content: space-evenly;
+
     }
 }
