@@ -1,0 +1,87 @@
+@import "../../common/colors.scss";
+.projectDetail {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px 0px;
+    background-color: $background-primary-light;
+    .detailContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 10px;
+        img {
+            max-width: 700px;
+            width: 100%;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: $font-primary;
+            margin-bottom: 40px;
+        }
+        .skills {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 20px;
+            padding: 10px 0px;
+            flex-wrap: wrap;
+            .skillsTitle {
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .skill {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                border-radius: 5px;
+                background: linear-gradient($background-primary-light, $background-primary-light) padding-box,
+                linear-gradient(to right, $font-primary-light,$font-primary, $font-primary-dark) border-box;
+                border-radius: 3px;
+                border: 2px solid transparent;
+                margin: 0px 10px;
+                &:hover {
+                    cursor: default;
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            .button {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+a{
+    text-decoration: none !important;
+}
+.hire {
+    box-shadow: 0px 3px 2px 1px $background-primary;
+}
+@media only screen and (max-width: 750px) {
+    .projectDetail {
+        .detailContent {
+            img {
+                max-width: 600px;
+                width: 100%;
+            }
+            .skills {
+                .skill {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}

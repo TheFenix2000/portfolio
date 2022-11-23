@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import "./Project.scss";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-function Project({ img, name }) {
+import { useNavigate } from "react-router-dom";
+function Project({ img, name, index }) {
   const [loaded, setLoaded] = useState(false);
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(`/projects/${index}`);
+  };
   return (
-    <div className="project">
+    <div className="project" onClick={handleClick}>
       <div className="projectBgImage">
         {loaded ? null : (
           <Box

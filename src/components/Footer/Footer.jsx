@@ -30,10 +30,7 @@ function Footer() {
           </Link>
         </BootstrapTooltip>
       </div>
-      <p>
-        &copy; 2022 Michał Woś | Inspired by{" "}
-        <Link to="https://https://github.com/machadop1407">Pedro Tech </Link>
-      </p>
+      <p>&copy; 2022 Michał Woś</p>
     </div>
   );
 }

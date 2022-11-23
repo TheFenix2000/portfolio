@@ -25,9 +25,9 @@ function Experience() {
             className="vertical-timeline-element-title"
             style={{ color: "#c77e00" }}
           >
-            Technikum Łączności nr 14 w Krakowie
+            Secondary Technical School of Communication no. 14 in Cracow
           </h4>
-          <h6>Informatician</h6>
+          <h6>Computer Scientist</h6>
           <p>
             <Link className="hire">Diploma</Link>{" "}
             <Link className="hire">Certificate</Link>

@@ -94,6 +94,16 @@
   @media only screen and (max-width: 615px) {
     .toggleButton {
       display: flex !important;
+      svg {
+        background-color: $background-primary-dark-opacity;
+        border-radius: 5px;
+        box-shadow: -6px 5px 12px -8px $font-secondary;
+        border-left: 1px solid lighten($background-primary, 20%);
+        border-bottom: 1px solid lighten($background-primary, 20%);
+        border-right: 1px solid lighten($background-primary, 3%);
+        border-top: 1px solid lighten($background-primary, 3%);
+        padding: 10px;
+      }
     }
     #close a {
       display: none !important;

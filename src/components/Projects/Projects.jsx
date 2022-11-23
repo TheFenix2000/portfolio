@@ -1,16 +1,22 @@
 import React from "react";
 import Project from "../Project/Project";
+import { projects } from "../../helpers/Projects";
 import "./Projects.scss";
-import { shop, movies, crud, pando } from "../../common/assets/index";
 function Projects() {
   return (
     <div className="projects">
       <h2>My Projects</h2>
       <div className="projectList">
-        <Project img={shop} name="Shop App" />
-        <Project img={movies} name="Movies App" />
-        <Project img={crud} name="CRUD App" />
-        <Project img={pando} name="Pando Apartments" />
+        {projects.map((project, index) => {
+          return (
+            <Project
+              key={index}
+              img={project.img}
+              name={project.name}
+              index={index}
+            />
+          );
+        })}
       </div>
     </div>
   );
