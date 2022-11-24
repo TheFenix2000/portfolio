@@ -7,7 +7,6 @@
     linear-gradient(to right, $font-primary-light,$font-primary, $font-primary-dark) border-box;
     border-radius: 7px;
     border: 4px solid transparent;
-    min-width: 250px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,5 +32,19 @@
         letter-spacing: 1px;
         margin-bottom: 0px !important;
         color: $font-secondary !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .project {
+        min-width: 0px !important;
+        .projectBgImage {
+            max-width: 200px;
+            max-height: 112.5px;
+            img {
+                max-width: 200px;
+                max-height: 112.5px;
+            }
+        }
     }
 }

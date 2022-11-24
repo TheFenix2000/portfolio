@@ -19,5 +19,6 @@ import shop from "./shop.png";
 import movies from "./movies.png";
 import crud from "./crud.png";
 import pando from "./pando.png";
+import logo from "../../common/assets/logo2.png";
 
-export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies, crud, pando}
+export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies, crud, pando, logo}
