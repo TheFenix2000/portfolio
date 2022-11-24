@@ -1,0 +1,29 @@
+<ifModule mod_rewrite.c>
+
+
+  #######################################################################
+  # GENERAL                                                             #
+  #######################################################################
+
+  # Make apache follow sym links to files
+  Options +FollowSymLinks
+  # If somebody opens a folder, hide all files from the resulting folder list
+  IndexIgnore */*
+
+
+  #######################################################################
+  # REWRITING                                                           #
+  #######################################################################
+
+  # Enable rewriting
+  RewriteEngine On
+
+  # If its not HTTPS
+  RewriteCond %{HTTPS} off
+
+  # Redirect to the same URL with https://, ignoring all further rules if this one is in effect
+  RewriteRule ^(.*) https://%{HTTP_HOST}/$1 [R,L]
+  # Rewrite all requests to the root
+  RewriteRule ^(.*) /
+
+</ifModule>
