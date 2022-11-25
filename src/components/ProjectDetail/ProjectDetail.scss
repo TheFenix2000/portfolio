@@ -16,6 +16,7 @@
         img {
             max-width: 700px;
             width: 100%;
+            border-radius: 10px;
         }
         h2 {
             font-size: 30px;
@@ -60,6 +61,18 @@
             width: 100%;
             .button {
                 margin-right: 20px;
+            }
+            .secondary {
+                color: $font-secondary;
+                border-radius: 5px;
+                background: linear-gradient($background-primary-light, $background-primary-light) padding-box,
+                linear-gradient(to right, $font-primary-light,$font-primary, $font-primary-dark) border-box;
+                border-radius: 20px;
+                border: 2px solid transparent;
+                padding: 5px;
+                svg {
+                    margin-right: 5px;
+                }
             }
         }
     }

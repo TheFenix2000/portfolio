@@ -27,10 +27,14 @@ function Experience() {
           >
             Secondary Technical School of Communication no. 14 in Cracow
           </h4>
-          <h6>Computer Scientist</h6>
+          <h6>IT technician</h6>
           <p>
-            <Link className="hire">Diploma</Link>{" "}
-            <Link className="hire">Certificate</Link>
+            <Link className="hire" to={"/docs/diplomas/0"}>
+              Diploma
+            </Link>{" "}
+            <Link className="hire" to={"/docs/certificates/0"}>
+              Certificate
+            </Link>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

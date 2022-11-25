@@ -48,6 +48,10 @@ export const projects = [
         skills: ['React', 'CSS', 'HTML', 'Bootstrap', 'MUI'],
         buttons: [
             {
+                name: "View live",
+                url: "https://pandoapartments.herokuapp.com/"
+            },
+            {
                 name: "Github", 
                 url:"https://github.com/Matd127/pandoapartments"
             }

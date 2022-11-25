@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
@@ -51,6 +52,11 @@ function Home() {
               <BootstrapTooltip title="Github Profile">
                 <a href="https://github.com/TheFenix2000">
                   <GitHubIcon />
+                </a>
+              </BootstrapTooltip>
+              <BootstrapTooltip title="LinkedIn Profile">
+                <a href="https://www.linkedin.com/in/michal-wos-frontend-dev">
+                  <LinkedInIcon />
                 </a>
               </BootstrapTooltip>
               <BootstrapTooltip title="Contact me">

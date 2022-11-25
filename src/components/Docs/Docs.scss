@@ -1,0 +1,19 @@
+@import "../../common/colors.scss";
+
+.docs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px 20px;
+    h2 {
+        font-weight: 700;
+        color: $font-primary;
+        font-size: 30px;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        max-width: 1000px;
+    }
+}

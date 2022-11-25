@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { projects } from "../../helpers/Projects";
 import "./ProjectDetail.scss";
 function ProjectDetail() {
@@ -28,9 +29,12 @@ function ProjectDetail() {
                   key={`${project.name}-${button.name}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="hire button"
+                  className={
+                    button.name === "View live" ? "button hire" : "secondary"
+                  }
                   href={button.url}
                 >
+                  {button.name === "Github" ? <GitHubIcon /> : null}
                   {button.name}
                 </a>
               );

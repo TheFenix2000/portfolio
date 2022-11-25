@@ -4,6 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import { Link } from "react-router-dom";
 import "./Footer.scss";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { styled } from "@mui/material/styles";
 function Footer() {
   const BootstrapTooltip = styled(({ className, ...props }) => (
@@ -22,6 +23,11 @@ function Footer() {
         <BootstrapTooltip title="Github Profile">
           <a href="https://github.com/TheFenix2000">
             <GitHubIcon />
+          </a>
+        </BootstrapTooltip>
+        <BootstrapTooltip title="LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/michal-wos-frontend-dev">
+            <LinkedInIcon />
           </a>
         </BootstrapTooltip>
         <BootstrapTooltip title="Contact me">

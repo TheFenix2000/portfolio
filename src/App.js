@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ProjectDetail from './components/ProjectDetail/ProjectDetail';
 import Contact from './components/Contact/Contact';
+import Docs from './components/Docs/Docs';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" exact element={<Home />}/>
           <Route path="/projects" exact element={<Projects />}/>
           <Route path="/projects/:projectID" exact element={<ProjectDetail />} />
+          <Route path="/docs/:category/:docID" exact element={<Docs />} />
           <Route path="/experience" exact element={<Experience />}/>
           <Route path="/contact" exact element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />

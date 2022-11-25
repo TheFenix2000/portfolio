@@ -20,5 +20,8 @@ import movies from "./movies.png";
 import crud from "./crud.png";
 import pando from "./pando.png";
 import logo from "../../common/assets/logo2.png";
+import technicalDiploma from "../../common/assets/docs/technical_diploma.png";
+import qualificationsCertificate from "../../common/assets/docs/qualifications_certificate.png";
 
-export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies, crud, pando, logo}
+
+export  {react, redux, html, css, bootstrap, mu5, npm, node, sass, express, mongo, hbs, php, mysql, git, api, mongoose, shop, movies, crud, pando, logo, technicalDiploma,qualificationsCertificate}
