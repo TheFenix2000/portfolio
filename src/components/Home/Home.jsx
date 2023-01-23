@@ -64,10 +64,10 @@ function Home() {
                   <EmailIcon />
                 </Link>
               </BootstrapTooltip>
-              <BootstrapTooltip title="Download résumé">
-                <Link to="/xyz">
+              <BootstrapTooltip title="Résumé">
+                <a href="./CV_Michal_Wos.pdf">
                   <AttachFileIcon />
-                </Link>
+                </a>
               </BootstrapTooltip>
             </div>
           </div>
