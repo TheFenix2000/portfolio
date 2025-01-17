@@ -1,13 +1,13 @@
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./Experience.scss";
-import SchoolIcon from "@mui/icons-material/School";
-import { Link } from "react-router-dom";
-import WorkIcon from "@mui/icons-material/Work";
 
 function Experience() {
   return (
@@ -71,7 +71,29 @@ function Experience() {
               Domains administration, creating webpages for clients and
               maintaining active ones.
             </p>
-            <a href="https://aktru.pl/" className="hire">
+            <a href="https://aktru.pl/" rel="noreferrer" target="_blank" className="hire">
+              Website
+            </a>
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          date="Apr 2023 - present"
+          iconStyle={{ background: "#633f00" }}
+          icon={<WorkIcon />}
+          className="vertical-timeline-element--education"
+          contentStyle={{ background: "#343434" }}
+        >
+          <h4
+            className="vertical-timeline-element-title"
+            style={{ color: "#c77e00" }}
+          >
+            Synapstry
+          </h4>
+          <h6>Frontend Developer</h6>
+          <p>
+            <p>
+            As a Frontend Developer I'm building and maintaining features in our software application. I use TypeScript daily and write tests to ensure code quality.            </p>
+            <a href="https://synapstry.com/" rel="noreferrer" target="_blank" className="hire">
               Website
             </a>
           </p>
